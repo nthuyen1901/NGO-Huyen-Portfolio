@@ -659,3 +659,23 @@ body:not(.user-is-tabbing) a:focus {
       height: 65vh;
   }
 }
+
+.projet-links {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.projet-links a {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: var(--pink);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: 0.2s ease-in-out;
+}
+
+.projet-links a:hover {
+  background: #ff5475;   /* lighter pink on hover */
+}
