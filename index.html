@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
-  <title>NGO Thi Huyen | Étudiante en MIAGE</title>
+  <title>NGO Thi Huyen | Portfolio</title>
 
   <meta name="description" content="Portfolio de NGO Thi Huyen, étudiante en MIAGE, passionnée par le développement web.">
   <meta name="keywords" content="NGO Thi Huyen, MIAGE, développement web, portfolio" />
@@ -21,10 +21,20 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Mes Projets</a></li>
+          <li class="nav__item"><a href="#top" class="nav__link">Accueil</a></li>
           <li class="nav__item"><a href="#travaux" class="nav__link">Travaux demandés</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">À propos</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contactez-moi</a></li>
+          <li class="nav__item"><a href="#notes" class="nav__link">Notes de cours</a></li>
+          <li class="nav__item"><a href="#docs-si" class="nav__link">Documents SI</a></li>
+          <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
+          <li class="nav__item"><a href="#projet-final" class="nav__link">Projet final</a></li>
+          <li class="nav__item"><a href="#soutenance" class="nav__link">Soutenance</a></li>
+          <li class="nav__item"><a href="#ressources" class="nav__link">Ressources</a></li>
+          <li class="nav__item">
+            <a href="https://github.com/nthuyen1901" class="nav__link" target="_blank" rel="noopener">
+              GitHub
+            </a>
+          </li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -32,7 +42,7 @@
     <div class="header__text-box row">
       <div class="header__text">
         <h1 class="heading-primary">
-          <span>Thi Huyen NGO</span>
+          <span>NGO Thi Huyen</span>
         </h1>
 
         <p>Portfolio de NGO Thi Huyen - Étudiante en MIAGE, passionnée par le développement web.</p>
@@ -43,29 +53,28 @@
 
   <main role="main">
 
-    <!-- MES PROJETS -->
+    <!-- (Optionnel) Mes projets personnels -->
     <section class="work" id="work">
       <div class="row">
-        <h2>Mes Projets</h2>
+        <h2>Mes projets personnels</h2>
 
         <div class="work__boxes">
           <div class="work__box">
             <div class="work__text">
               <h3>Application de Gestion</h3>
               <p>
-                Projet scolaire développé en MIAGE : Deep Learning, gestion de bibliothèque.
+                Projet personnel développé en MIAGE, pour expérimenter le développement web et la gestion de données.
               </p>
               <ul class="work__list">
-                <li>HTML</li>
-                <li>SCSS</li>
+                <li>HTML / CSS</li>
                 <li>JavaScript</li>
               </ul>
 
               <div class="work__links">
                 <a href="https://github.com/nthuyen1901" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                  Voir sur GitHub <span>&rarr;</span>
                 </a>
-                <a href="https://github.com/nthuyen1901" title="View Source Code" target="_blank">
+                <a href="https://github.com/nthuyen1901" title="Voir le code source" target="_blank">
                   <img src="./images/github.svg" class="work__code" alt="GitHub">
                 </a>
               </div>
@@ -76,8 +85,7 @@
       </div>
     </section>
 
-    <!-- TRAVAUX DEMANDÉS – PDF VIEWER -->
-    <!-- Put your PDFs in /pdf-travaux/ (td1.pdf, td2.pdf, etc.) -->
+    <!-- 1) TRAVAUX DEMANDÉS – viewer -->
     <section class="travaux" id="travaux">
       <div class="row">
         <h2>Travaux demandés</h2>
@@ -88,7 +96,6 @@
           <aside class="viewer-sidebar">
             <h3 class="viewer-sidebar__title">Travaux demandés</h3>
 
-            <!-- Each button corresponds to one PDF -->
             <button
               class="viewer-btn travaux-btn viewer-btn--active"
               data-file="./pdf-travaux/td1.pdf">
@@ -116,7 +123,7 @@
             <iframe
               id="travauxViewer"
               src="./pdf-travaux/td1.pdf"
-              title="Travaux PDF"
+              title="Travaux demandés"
               frameborder="0">
             </iframe>
           </div>
@@ -124,7 +131,175 @@
       </div>
     </section>
 
-    <!-- À PROPOS -->
+    <!-- 2) NOTES DE COURS – viewer -->
+    <section class="notes" id="notes">
+      <div class="row">
+        <h2>Notes de cours</h2>
+        <p>Sélectionnez un document dans la barre latérale pour l’afficher ci-dessous :</p>
+
+        <div class="viewer-layout">
+          <aside class="viewer-sidebar">
+            <h3 class="viewer-sidebar__title">Notes de cours</h3>
+
+            <button
+              class="viewer-btn notes-btn viewer-btn--active"
+              data-file="./pdf-notes/chapitre1-introduction.pdf">
+              Chapitre 1 : Introduction
+            </button>
+            <button
+              class="viewer-btn notes-btn"
+              data-file="./pdf-notes/chapitre2-gestion-de-projet.pdf">
+              Chapitre 2 : Gestion de projet
+            </button>
+            <button
+              class="viewer-btn notes-btn"
+              data-file="./pdf-notes/chapitre3.pdf">
+              Chapitre 3 : Cherche un nom
+            </button>
+            <button
+              class="viewer-btn notes-btn"
+              data-file="./pdf-notes/chapitre4.pdf">
+              Chapitre 4 : Cherche un nom
+            </button>
+            <button
+              class="viewer-btn notes-btn"
+              data-file="./pdf-notes/projet.pdf">
+              Projet
+            </button>
+          </aside>
+
+          <div class="viewer-frame">
+            <iframe
+              id="notesViewer"
+              src="./pdf-notes/chapitre1-introduction.pdf"
+              title="Notes de cours"
+              frameborder="0">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3) DOCUMENTS SI -->
+    <section class="docs-si" id="docs-si">
+      <div class="row">
+        <h2>Documents d’un Système d’Information</h2>
+
+        <p><strong>Objectif :</strong> Identifier, rédiger et organiser des documents liés à un système d’information.
+          Les documents doivent être bien rédigés, classés et présentés de manière professionnelle.</p>
+
+        <p><strong>Documents disponibles :</strong></p>
+        <ul>
+          <li>
+            <a href="./docs-si/diagramme-systeme-information.pdf" target="_blank">
+              Diagramme du Système d’Information
+            </a>
+          </li>
+          <li>
+            <a href="./docs-si/diagramme-flux.pdf" target="_blank">
+              Diagramme des Flux
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4) CERTIFICATIONS -->
+    <section class="certifications" id="certifications">
+      <div class="row">
+        <h2>Certifications</h2>
+
+        <p><strong>Objectif :</strong> Valoriser vos compétences par des attestations ou certifications obtenues.
+          Les certificats doivent être lisibles (PDF ou image) et correctement identifiés.</p>
+
+        <p><strong>Mes certifications :</strong></p>
+        <ul>
+          <li>
+            <a href="./certifications/certification-html-css.pdf" target="_blank">
+              Certification HTML &amp; CSS
+            </a>
+          </li>
+          <li>
+            <a href="./certifications/certification-python.pdf" target="_blank">
+              Certification Python
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5) PROJET FINAL -->
+    <section class="projet-final" id="projet-final">
+      <div class="row">
+        <h2>Projet Final</h2>
+
+        <p><strong>Objectif :</strong> Concevoir et réaliser un projet numérique intégrant les compétences acquises.
+          Le projet doit être réalisé, documenté et présenté de manière professionnelle.</p>
+
+        <p><strong>Présentation du projet :</strong><br />
+          Voici le document complet de présentation du projet final :</p>
+
+        <div class="viewer-frame">
+          <iframe
+            src="./projet-final/projet-final.pdf"
+            title="Projet final"
+            frameborder="0">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6) SOUTENANCE -->
+    <section class="soutenance" id="soutenance">
+      <div class="row">
+        <h2>Soutenance</h2>
+
+        <p><strong>Diaporama pour la Soutenance</strong></p>
+        <p><strong>Objectif :</strong> Synthétiser et présenter un projet de manière claire et professionnelle.
+          Le diaporama doit être structuré, visuellement lisible et adapté à une présentation orale.</p>
+
+        <p><strong>Visualiser le diaporama :</strong></p>
+
+        <div class="viewer-frame">
+          <iframe
+            src="./soutenance/diaporama-soutenance.pdf"
+            title="Diaporama de soutenance"
+            frameborder="0">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7) RESSOURCES -->
+    <section class="ressources" id="ressources">
+      <div class="row">
+        <h2>Autres Ressources</h2>
+
+        <p><strong>Objectif :</strong> Développer une capacité de veille et d’enrichissement personnel par des ressources complémentaires.
+          Les ressources ajoutées doivent être pertinentes, variées et correctement référencées.</p>
+
+        <p><strong>Ressources complémentaires :</strong></p>
+        <ul>
+          <li>
+            <a href="https://openclassrooms.com/" target="_blank" rel="noopener">
+              OpenClassrooms – Cours en ligne
+            </a>
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/" target="_blank" rel="noopener">
+              W3Schools – Références HTML/CSS/JS
+            </a>
+          </li>
+          <li>
+            <a href="https://www.coursera.org/" target="_blank" rel="noopener">
+              Coursera – Formations MIAGE et SI
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 8) À PROPOS -->
     <section class="about" id="about">
       <div class="row">
         <h2>À propos de moi</h2>
@@ -162,7 +337,7 @@
     </div>
   </section>
 
-  <!-- FOOTER (icons removed) -->
+  <!-- FOOTER -->
   <footer role="contentinfo" class="footer">
     <div class="row">
       <p>&copy; 2024 NGO Thi Huyen — Tous droits réservés.</p>
@@ -170,8 +345,8 @@
   </footer>
 
   <!-- Back to top -->
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
+  <a href="#top" class="back-to-top" title="Retour en haut">
+    <img src="./images/arrow-up.svg" alt="Retour en haut" class="back-to-top__image" />
   </a>
 
   <script src="./index.js"></script>
