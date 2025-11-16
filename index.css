@@ -343,34 +343,37 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Navigation ----- */
 /* --------------------------------------- */
 
+/* --------------------------------------- */
+/* ----- Navigation ----- */
+/* --------------------------------------- */
+
 .nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;          /* center the whole menu */
     padding: var(--gutter-normal) 0;
 }
 
 .nav__items {
     display: flex;
     list-style: none;
+    flex-wrap: wrap;                  /* allows wrapping on very small screens */
+    justify-content: center;
+    column-gap: var(--gutter-medium); /* horizontal space between links */
+    row-gap: 1rem;                    /* vertical space when it wraps */
 }
 
+/* we use gap above, so no need for right margin */
 .nav__item:not(:last-child) {
-    margin-right: var(--gutter-medium);
+    margin-right: 0;
 }
 
-@media(max-width: 500px) {
+@media (max-width: 500px) {
     .nav {
         justify-content: center;
     }
 }
 
-@media(max-width: 400px) {
-    .nav__item:not(:last-child) {
-        margin-right: var(--gutter-normal);
-    }
-}
-
-@media(max-width: 300px) {
+@media (max-width: 300px) {
     .nav {
         font-size: var(--font-size-small);
     }
@@ -383,6 +386,7 @@ body:not(.user-is-tabbing) a:focus {
     text-decoration: none;
     color: inherit;
     transition: all .2s;
+    white-space: nowrap;              
 }
 
 .nav__link::after {
