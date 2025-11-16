@@ -108,7 +108,15 @@ body {
 section {
     padding: var(--gutter-huge) 0;
     border-bottom: var(--border-light);
+
+    
+    background: linear-gradient(rgba(0,0,0,.15), rgba(0,0,0,.45)),
+                url('./images/header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
+
 
 img {
     object-fit: contain;
