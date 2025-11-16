@@ -22,6 +22,8 @@
     box-sizing: inherit;
 }
 
+
+
 :root {
     --font-size-small: 1.8rem;
     --font-size-normal: 2.2rem;
@@ -622,4 +624,37 @@ body:not(.user-is-tabbing) a:focus {
     .footer {
         padding: var(--gutter-medium) 0;
     } 
+}
+
+/* --------------------------------------- */
+/* ----- PDF viewer size ----------------- */
+/* --------------------------------------- */
+
+/* The iframe that shows the PDF */
+#pdf-viewer {
+    width: 100%;        /* take full width of its container */
+    max-width: 1000px;  /* limit width so it doesn't get too huge */
+    height: 85vh;       /* 85% of viewport height = nice big viewer */
+    border: none;
+    display: block;
+    margin: 2rem auto;  /* center horizontally with some space above */
+    background: #fff;
+    border-radius: 8px;
+}
+
+/* Optional wrapper if you use one (won't break anything if not present) */
+.viewer-frame {
+    width: 100%;
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+}
+
+/* Slightly smaller on small screens */
+@media (max-width: 600px) {
+    #pdf-viewer {
+        height: 70vh;
+    }
 }
