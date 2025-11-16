@@ -1,47 +1,40 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
- 
-  <title>
-   NGO Thi Huyen | Étudiante en MIAGE
-  </title>
+  <title>NGO Thi Huyen | Étudiante en MIAGE</title>
 
-  <meta name="description" content="Add small description of yourslef.">
+  <meta name="description" content="Portfolio de NGO Thi Huyen, étudiante en MIAGE, passionnée par le développement web.">
+  <meta name="keywords" content="NGO Thi Huyen, MIAGE, développement web, portfolio" />
 
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
   <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
 
-
-
+  <!-- HEADER + NAV -->
   <header class="header" role="banner" id="top">
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-    <li class="nav__item"><a href="#work" class="nav__link">Mes Projets</a></li>
-<li class="nav__item"><a href="#about" class="nav__link">À propos</a></li>
-<li class="nav__item"><a href="#contact" class="nav__link">Contactez-moi</a></li>
-
-          </li>
+          <li class="nav__item"><a href="#work" class="nav__link">Mes Projets</a></li>
+          <li class="nav__item"><a href="#travaux" class="nav__link">Travaux demandés</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">À propos</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contactez-moi</a></li>
         </ul>
       </nav>
     </div>
+
     <div class="header__text-box row">
       <div class="header__text">
         <h1 class="heading-primary">
-         
-          <span>NGO Thi Huyen</span>
+          <span>Thi Huyen NGO</span>
         </h1>
-       
+
         <p>Portfolio de NGO Thi Huyen - Étudiante en MIAGE, passionnée par le développement web.</p>
         <a href="#contact" class="btn btn--pink">Contactez-moi</a>
       </div>
@@ -50,27 +43,22 @@
 
   <main role="main">
 
-   
-
+    <!-- MES PROJETS -->
     <section class="work" id="work">
       <div class="row">
         <h2>Mes Projets</h2>
+
         <div class="work__boxes">
-
-          
-
           <div class="work__box">
             <div class="work__text">
               <h3>Application de Gestion</h3>
               <p>
-                Projet scolaire développé en MIAGE: 
-                Deep Learning, gestion de bibliothèque
+                Projet scolaire développé en MIAGE : Deep Learning, gestion de bibliothèque.
               </p>
               <ul class="work__list">
                 <li>HTML</li>
                 <li>SCSS</li>
                 <li>JavaScript</li>
-
               </ul>
 
               <div class="work__links">
@@ -82,66 +70,110 @@
                 </a>
               </div>
             </div>
-    
           </div>
+        </div>
 
-          
-    
+      </div>
+    </section>
 
+    <!-- TRAVAUX DEMANDÉS – PDF VIEWER -->
+    <!-- Put your PDFs in /pdf-travaux/ (td1.pdf, td2.pdf, etc.) -->
+    <section class="travaux" id="travaux">
+      <div class="row">
+        <h2>Travaux demandés</h2>
+        <p>Sélectionnez un document dans la barre latérale pour l’afficher ci-dessous :</p>
+
+        <div class="viewer-layout">
+          <!-- Sidebar -->
+          <aside class="viewer-sidebar">
+            <h3 class="viewer-sidebar__title">Travaux demandés</h3>
+
+            <!-- Each button corresponds to one PDF -->
+            <button
+              class="viewer-btn travaux-btn viewer-btn--active"
+              data-file="./pdf-travaux/td1.pdf">
+              TD1
+            </button>
+            <button
+              class="viewer-btn travaux-btn"
+              data-file="./pdf-travaux/td2.pdf">
+              TD2
+            </button>
+            <button
+              class="viewer-btn travaux-btn"
+              data-file="./pdf-travaux/td3.pdf">
+              TD3
+            </button>
+            <button
+              class="viewer-btn travaux-btn"
+              data-file="./pdf-travaux/td4.pdf">
+              TD4
+            </button>
+          </aside>
+
+          <!-- PDF viewer -->
+          <div class="viewer-frame">
+            <iframe
+              id="travauxViewer"
+              src="./pdf-travaux/td1.pdf"
+              title="Travaux PDF"
+              frameborder="0">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
     <section class="about" id="about">
       <div class="row">
         <h2>À propos de moi</h2>
         <div class="about__content">
           <div class="about__text">
-           
             <p>
-              Je suis NGO Thi Huyen, étudiante en MIAGE.  
+              Je suis NGO Thi Huyen, étudiante en MIAGE.
               J’aime apprendre les technologies du web et développer des projets pratiques pour améliorer mes compétences.
-
             </p>
-            
+
             <a href="#" class="btn">Mon CV</a>
           </div>
 
           <div class="about__photo-container">
-          
-            <img class="about__photo" src="./images/cay.jpg" alt="" />
+            <img class="about__photo" src="./images/cay.jpg" alt="Photo de profil" />
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
-  
-
+  <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="row">
       <h2>Contactez-moi</h2>
       <div class="contact__info">
         <p>
-          Vous pouvez me contacter pour toute question ou collaboration.  
+          Vous pouvez me contacter pour toute question ou collaboration.
           Le moyen le plus rapide est par email.
         </p>
-        
-        <a href="mailto:you@example.com" class="btn">huyenngothi191@gmail.com</a>
+
+        <a href="mailto:huyenngothi191@gmail.com" class="btn">huyenngothi191@gmail.com</a>
       </div>
     </div>
   </section>
 
-  
-
+  <!-- FOOTER (icons removed) -->
   <footer role="contentinfo" class="footer">
     <div class="row">
-      
-      
-
-     
+      <p>&copy; 2024 NGO Thi Huyen — Tous droits réservés.</p>
     </div>
   </footer>
 
+  <!-- Back to top -->
   <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
   </a>
+
   <script src="./index.js"></script>
 </body>
 
