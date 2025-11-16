@@ -85,7 +85,7 @@
       </div>
     </section>
 
-    <!-- 1) TRAVAUX DEMANDÉS – viewer -->
+        <!-- 1) TRAVAUX DEMANDÉS – viewer -->
     <section class="travaux" id="travaux">
       <div class="row">
         <h2>Travaux demandés</h2>
@@ -96,33 +96,51 @@
           <aside class="viewer-sidebar">
             <h3 class="viewer-sidebar__title">Travaux demandés</h3>
 
-            <button
-              class="viewer-btn travaux-btn viewer-btn--active"
-              data-file="./pdf-travaux/td1.pdf">
-              TD1
-            </button>
-            <button
-              class="viewer-btn travaux-btn"
-              data-file="./pdf-travaux/td2.pdf">
-              TD2
-            </button>
-            <button
-              class="viewer-btn travaux-btn"
-              data-file="./pdf-travaux/td3.pdf">
-              TD3
-            </button>
-            <button
-              class="viewer-btn travaux-btn"
-              data-file="./pdf-travaux/td4.pdf">
-              TD4
-            </button>
+            <!-- FOLDERS FOR TD1–TD4 -->
+            <div class="pdf-tree">
+              <!-- TD1 -->
+              <details open>
+                <summary>TD1</summary>
+                <!-- Put your real file names here -->
+                <button type="button" onclick="showTravauxPDF('TD1/td1.pdf')">
+                  TD1 – Sujet principal
+                </button>
+                <button type="button" onclick="showTravauxPDF('TD1/TD 1 SI 2.pdf')">
+                  TD1 – SI 2
+                </button>
+              </details>
+
+              <!-- TD2 -->
+              <details>
+                <summary>TD2</summary>
+                <button type="button" onclick="showTravauxPDF('TD2/td2.pdf')">
+                  TD2 – Sujet principal
+                </button>
+              </details>
+
+              <!-- TD3 -->
+              <details>
+                <summary>TD3</summary>
+                <button type="button" onclick="showTravauxPDF('TD3/td3.pdf')">
+                  TD3 – Sujet principal
+                </button>
+              </details>
+
+              <!-- TD4 -->
+              <details>
+                <summary>TD4</summary>
+                <button type="button" onclick="showTravauxPDF('TD4/td4.pdf')">
+                  TD4 – Sujet principal
+                </button>
+              </details>
+            </div>
           </aside>
 
           <!-- PDF viewer -->
           <div class="viewer-frame">
             <iframe
               id="travauxViewer"
-              src="./pdf-travaux/td1.pdf"
+              src="./pdf-travaux/TD1/td1.pdf"
               title="Travaux demandés"
               frameborder="0">
             </iframe>
@@ -141,37 +159,54 @@
           <aside class="viewer-sidebar">
             <h3 class="viewer-sidebar__title">Notes de cours</h3>
 
-            <button
-              class="viewer-btn notes-btn viewer-btn--active"
-              data-file="./pdf-notes/chapitre1-introduction.pdf">
-              Chapitre 1 : Introduction
-            </button>
-            <button
-              class="viewer-btn notes-btn"
-              data-file="./pdf-notes/chapitre2-gestion-de-projet.pdf">
-              Chapitre 2 : Gestion de projet
-            </button>
-            <button
-              class="viewer-btn notes-btn"
-              data-file="./pdf-notes/chapitre3.pdf">
-              Chapitre 3 : Cherche un nom
-            </button>
-            <button
-              class="viewer-btn notes-btn"
-              data-file="./pdf-notes/chapitre4.pdf">
-              Chapitre 4 : Cherche un nom
-            </button>
-            <button
-              class="viewer-btn notes-btn"
-              data-file="./pdf-notes/projet.pdf">
-              Projet
-            </button>
+            <!-- FOLDERS FOR CHAPTERS -->
+            <div class="pdf-tree">
+              <!-- Chapitre 1 -->
+              <details open>
+                <summary>Chapitre 1 : Introduction</summary>
+                <button type="button" onclick="showNotesPDF('Chapitre1/chapitre1-introduction.pdf')">
+                  Cours complet
+                </button>
+              </details>
+
+              <!-- Chapitre 2 -->
+              <details>
+                <summary>Chapitre 2 : Gestion de projet</summary>
+                <button type="button" onclick="showNotesPDF('Chapitre2/chapitre2-gestion-de-projet.pdf')">
+                  Cours complet
+                </button>
+              </details>
+
+              <!-- Chapitre 3 -->
+              <details>
+                <summary>Chapitre 3 : Cherche un nom</summary>
+                <button type="button" onclick="showNotesPDF('Chapitre3/chapitre3.pdf')">
+                  Cours complet
+                </button>
+              </details>
+
+              <!-- Chapitre 4 -->
+              <details>
+                <summary>Chapitre 4 : Cherche un nom</summary>
+                <button type="button" onclick="showNotesPDF('Chapitre4/chapitre4.pdf')">
+                  Cours complet
+                </button>
+              </details>
+
+              <!-- Projet -->
+              <details>
+                <summary>Projet</summary>
+                <button type="button" onclick="showNotesPDF('Projet/projet.pdf')">
+                  Document de projet
+                </button>
+              </details>
+            </div>
           </aside>
 
           <div class="viewer-frame">
             <iframe
               id="notesViewer"
-              src="./pdf-notes/chapitre1-introduction.pdf"
+              src="./pdf-notes/Chapitre1/chapitre1-introduction.pdf"
               title="Notes de cours"
               frameborder="0">
             </iframe>
@@ -179,6 +214,7 @@
         </div>
       </div>
     </section>
+
 
     <!-- 3) DOCUMENTS SI -->
     <section class="docs-si" id="docs-si">
