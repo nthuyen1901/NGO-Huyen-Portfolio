@@ -645,7 +645,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .viewer-frame {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1400px;
     margin: 3rem auto;
     padding: 1.5rem;
     background: rgba(0, 0, 0, 0.4);
