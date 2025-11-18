@@ -85,129 +85,142 @@
       </div>
     </section>
 
-      
-   <section class="travaux" id="travaux">
-  <div class="row">
-    <h2>Travaux demandés</h2>
-    <p>Sélectionnez un document dans la barre latérale pour l’afficher ci-dessous :</p>
 
-    <div class="viewer-layout">
-      <!-- Sidebar -->
-      <aside class="viewer-sidebar">
-        <h3 class="viewer-sidebar__title">Travaux demandés</h3>
+    <!-- 1) TRAVAUX DEMANDÉS – viewer -->
+    <section class="travaux" id="travaux">
+      <div class="row">
+        <h2>Travaux demandés</h2>
+        <p>Sélectionnez un document dans la barre latérale pour l’afficher ci-dessous :</p>
 
-        <div class="pdf-tree">
-          <!-- TD1 -->
-          <details open>
-            <summary>TD1</summary>
+        <div class="viewer-layout">
+          <!-- Sidebar -->
+          <aside class="viewer-sidebar">
+            <h3 class="viewer-sidebar__title">Travaux demandés</h3>
 
-            <button type="button"
-              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD1)TD 1 SI.pdf')">
-              (TD1) TD 1 SI
-            </button>
+            <div class="pdf-tree">
+              <!-- TD1 -->
+              <details open>
+                <summary>TD1</summary>
 
-            <button type="button"
-              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD1)dossier 3.pdf')">
-              (TD1) Dossier 3
-            </button>
+                <button type="button"
+                  class="viewer-btn travaux-btn"
+                  data-file="./pdf-travaux/TD1/(TD1)TD 1 SI.pdf">
+                  (TD1) TD 1 SI
+                </button>
 
-            <button type="button"
-              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD1)td_PGI_exercice.pdf')">
-              (TD1) TD PGI exercice
-            </button>
+                <button type="button"
+                  class="viewer-btn travaux-btn"
+                  data-file="./pdf-travaux/TD1/(TD1)dossier 3.pdf">
+                  (TD1) Dossier 3
+                </button>
 
-            <!-- Fichier Excel : ouverture dans un nouvel onglet -->
-            <a href="./pdf-travaux/TD1/(TD1)PGI_exercice.xls" target="_blank">
-              (TD1) PGI exercice (XLS)
-            </a>
-          </details>
+                <button type="button"
+                  class="viewer-btn travaux-btn"
+                  data-file="./pdf-travaux/TD1/(TD1)td_PGI_exercice.pdf">
+                  (TD1) TD PGI exercice
+                </button>
 
-          <!-- TD2 -->
-          <details>
-            <summary>TD2</summary>
+                <!-- Fichier Excel : ouverture dans un nouvel onglet -->
+                <a href="./pdf-travaux/TD1/(TD1)PGI_exercice.xls" target="_blank">
+                  (TD1) PGI exercice (XLS)
+                </a>
+              </details>
 
-            <button type="button"
-              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD2)A2.2_TD2_ProcessusOrganisationnel.pdf')">
-              (TD2) A2.2 TD2 Processus Org
-            </button>
+              <!-- TD2 -->
+              <details>
+                <summary>TD2</summary>
 
-            <button type="button"
-              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD2)TD2 si.pdf')">
-              (TD2) TD2 SI
-            </button>
+                <button type="button"
+                  class="viewer-btn travaux-btn"
+                  data-file="./pdf-travaux/TD1/(TD2)A2.2_TD2_ProcessusOrganisationnel.pdf">
+                  (TD2) A2.2 TD2 Processus Org
+                </button>
 
-            <button type="button"
-              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD2)training shéma acteur flux.pdf')">
-              (TD2) Training schéma acteur flux
-            </button>
-          </details>
+                <button type="button"
+                  class="viewer-btn travaux-btn"
+                  data-file="./pdf-travaux/TD1/(TD2)TD2 si.pdf">
+                  (TD2) TD2 SI
+                </button>
 
-          <!-- TD3 -->
-          <details>
-            <summary>TD3</summary>
+                <button type="button"
+                  class="viewer-btn travaux-btn"
+                  data-file="./pdf-travaux/TD1/(TD2)training shéma acteur flux.pdf">
+                  (TD2) Training schéma acteur flux
+                </button>
+              </details>
 
-            <button type="button"
-              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD3)Odoo présentation.pdf')">
-              (TD3) Odoo présentation
-            </button>
+              <!-- TD3 -->
+              <details>
+                <summary>TD3</summary>
 
-            <button type="button"
-              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD3)TP Odoo.pdf')">
-              (TD3) TP Odoo
-            </button>
-          </details>
+                <button type="button"
+                  class="viewer-btn travaux-btn"
+                  data-file="./pdf-travaux/TD1/(TD3)Odoo présentation.pdf">
+                  (TD3) Odoo présentation
+                </button>
 
-          <!-- TD4 -->
-          <details>
-            <summary>TD4</summary>
+                <button type="button"
+                  class="viewer-btn travaux-btn"
+                  data-file="./pdf-travaux/TD1/(TD3)TP Odoo.pdf">
+                  (TD3) TP Odoo
+                </button>
+              </details>
 
-            <button type="button"
-              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD4)Les phases SI.pdf')">
-              (TD4) Les phases SI
-            </button>
+              <!-- TD4 -->
+              <details>
+                <summary>TD4</summary>
 
-            <button type="button"
-              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD4)TD MCD.pdf')">
-              (TD4) TD MCD
-            </button>
+                <button type="button"
+                  class="viewer-btn travaux-btn"
+                  data-file="./pdf-travaux/TD1/(TD4)Les phases SI.pdf">
+                  (TD4) Les phases SI
+                </button>
 
-            <button type="button"
-              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD4)tp gantt.pdf')">
-              (TD4) TP Gantt
-            </button>
-          </details>
+                <button type="button"
+                  class="viewer-btn travaux-btn"
+                  data-file="./pdf-travaux/TD1/(TD4)TD MCD.pdf">
+                  (TD4) TD MCD
+                </button>
 
-          <!-- TD5 -->
-          <details>
-            <summary>TD5</summary>
+                <button type="button"
+                  class="viewer-btn travaux-btn"
+                  data-file="./pdf-travaux/TD1/(TD4)tp gantt.pdf">
+                  (TD4) TP Gantt
+                </button>
+              </details>
 
-            <button type="button"
-              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD5)Diagramme de classe.pdf')">
-              (TD5) Diagramme de classe
-            </button>
+              <!-- TD5 -->
+              <details>
+                <summary>TD5</summary>
 
-            <button type="button"
-              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD5)USE CASE.pdf')">
-              (TD5) USE CASE
-            </button>
-          </details>
+                <button type="button"
+                  class="viewer-btn travaux-btn"
+                  data-file="./pdf-travaux/TD1/(TD5)Diagramme de classe.pdf">
+                  (TD5) Diagramme de classe
+                </button>
+
+                <button type="button"
+                  class="viewer-btn travaux-btn"
+                  data-file="./pdf-travaux/TD1/(TD5)USE CASE.pdf">
+                  (TD5) USE CASE
+                </button>
+              </details>
+            </div>
+          </aside>
+
+          <!-- PDF viewer -->
+          <div class="viewer-frame">
+            <!-- PDF affiché par défaut : TD1 -->
+            <iframe
+              id="travauxViewer"
+              src="./pdf-travaux/TD1/(TD1)TD 1 SI.pdf"
+              title="Travaux demandés"
+              frameborder="0">
+            </iframe>
+          </div>
         </div>
-      </aside>
-
-      <!-- PDF viewer -->
-      <div class="viewer-frame">
-        <!-- PDF affiché par défaut : TD1 -->
-        <iframe
-          id="travauxViewer"
-          src="./pdf-travaux/TD1/(TD1)TD 1 SI.pdf"
-          title="Travaux demandés"
-          frameborder="0">
-        </iframe>
       </div>
-    </div>
-  </div>
-</section>
-
+    </section>
 
 
     <!-- 2) NOTES DE COURS – viewer -->
@@ -225,7 +238,9 @@
               <!-- Chapitre 1 -->
               <details open>
                 <summary>Chapitre 1 : Introduction</summary>
-                <button type="button" onclick="showNotesPDF('Chapitre1/chapitre1-introduction.pdf')">
+                <button type="button"
+                  class="viewer-btn notes-btn"
+                  data-file="./pdf-notes/Chapitre1/chapitre1-introduction.pdf">
                   Cours complet
                 </button>
               </details>
@@ -233,7 +248,9 @@
               <!-- Chapitre 2 -->
               <details>
                 <summary>Chapitre 2 : Gestion de projet</summary>
-                <button type="button" onclick="showNotesPDF('Chapitre2/chapitre2-gestion-de-projet.pdf')">
+                <button type="button"
+                  class="viewer-btn notes-btn"
+                  data-file="./pdf-notes/Chapitre2/chapitre2-gestion-de-projet.pdf">
                   Cours complet
                 </button>
               </details>
@@ -241,7 +258,9 @@
               <!-- Chapitre 3 -->
               <details>
                 <summary>Chapitre 3 : Cherche un nom</summary>
-                <button type="button" onclick="showNotesPDF('Chapitre3/chapitre3.pdf')">
+                <button type="button"
+                  class="viewer-btn notes-btn"
+                  data-file="./pdf-notes/Chapitre3/chapitre3.pdf">
                   Cours complet
                 </button>
               </details>
@@ -249,7 +268,9 @@
               <!-- Chapitre 4 -->
               <details>
                 <summary>Chapitre 4 : Cherche un nom</summary>
-                <button type="button" onclick="showNotesPDF('Chapitre4/chapitre4.pdf')">
+                <button type="button"
+                  class="viewer-btn notes-btn"
+                  data-file="./pdf-notes/Chapitre4/chapitre4.pdf">
                   Cours complet
                 </button>
               </details>
@@ -257,7 +278,9 @@
               <!-- Projet -->
               <details>
                 <summary>Projet</summary>
-                <button type="button" onclick="showNotesPDF('Projet/projet.pdf')">
+                <button type="button"
+                  class="viewer-btn notes-btn"
+                  data-file="./pdf-notes/Projet/projet.pdf">
                   Document de projet
                 </button>
               </details>
@@ -325,36 +348,36 @@
       </div>
     </section>
 
-   <!-- 5) PROJET FINAL -->
-<section class="projet-final" id="projet-final">
-  <div class="row">
-    <h2>Projet Final</h2>
+    <!-- 5) PROJET FINAL -->
+    <section class="projet-final" id="projet-final">
+      <div class="row">
+        <h2>Projet Final</h2>
 
-    <p><strong>Objectif :</strong> Concevoir et réaliser un projet numérique intégrant les compétences acquises.
-      Le projet doit être réalisé, documenté et présenté de manière professionnelle.</p>
+        <p><strong>Objectif :</strong> Concevoir et réaliser un projet numérique intégrant les compétences acquises.
+          Le projet doit être réalisé, documenté et présenté de manière professionnelle.</p>
 
-    <p><strong>Présentation du projet :</strong><br />
-      Voici le document complet de présentation du projet final :</p>
+        <p><strong>Présentation du projet :</strong><br />
+          Voici le document complet de présentation du projet final :</p>
 
-    <div class="viewer-frame">
-      <iframe
-        src="./projet-final/projet-final.pdf"
-        title="Projet final"
-        frameborder="0">
-      </iframe>
-    </div>
+        <div class="viewer-frame">
+          <iframe
+            src="./projet-final/projet-final.pdf"
+            title="Projet final"
+            frameborder="0">
+          </iframe>
+        </div>
 
-    <!-- link added -->
-    <div class="projet-links">
-      <a href="https://github.com/nthuyen1901/systeme-de-gestion-de-bibliotheque-2025" 
-         target="_blank" 
-         class="btn btn--pink">
-        Voir le projet sur GitHub
-      </a>
-    </div>
+        <!-- link added -->
+        <div class="projet-links">
+          <a href="https://github.com/nthuyen1901/systeme-de-gestion-de-bibliotheque-2025"
+            target="_blank"
+            class="btn btn--pink">
+            Voir le projet sur GitHub
+          </a>
+        </div>
 
-  </div>
-</section>
+      </div>
+    </section>
 
     <!-- 6) SOUTENANCE -->
     <section class="soutenance" id="soutenance">
