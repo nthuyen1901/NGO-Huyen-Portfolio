@@ -336,29 +336,56 @@
       </div>
     </section>
 
-    <!-- 4) CERTIFICATIONS -->
-    <section class="certifications" id="certifications">
-      <div class="row">
-        <h2>Certifications</h2>
+ <!-- 4) CERTIFICATIONS -->
+<section class="certifications" id="certifications">
+  <div class="row">
+    <h2>Certifications</h2>
 
-        <p><strong>Objectif :</strong> Valoriser vos compétences par des attestations ou certifications obtenues.
-          Les certificats doivent être lisibles (PDF ou image) et correctement identifiés.</p>
+    <p><strong>Objectif :</strong> Valoriser vos compétences par les certificats obtenus.</p>
+    <p>Sélectionnez un document dans la barre latérale pour l’afficher ci-dessous :</p>
 
-        <p><strong>Mes certifications :</strong></p>
-        <ul>
-          <li>
-            <a href="./certifications/certification-html-css.pdf" target="_blank">
-              Certification HTML &amp; CSS
-            </a>
-          </li>
-          <li>
-            <a href="./certifications/certification-python.pdf" target="_blank">
-              Certification Python
-            </a>
-          </li>
-        </ul>
+    <div class="viewer-layout">
+      <!-- Sidebar -->
+      <aside class="viewer-sidebar">
+        <h3 class="viewer-sidebar__title">Mes Certifications</h3>
+
+        <div class="pdf-tree">
+          <details open>
+            <summary>Certificats</summary>
+
+            <button type="button"
+              class="viewer-btn certif-btn"
+              data-file="./pdf-travaux/Certifications/CSS.pdf">
+              Certification CSS
+            </button>
+
+            <button type="button"
+              class="viewer-btn certif-btn"
+              data-file="./pdf-travaux/Certifications/SQL_basic_.pdf">
+              SQL – Niveau débutant
+            </button>
+
+            <button type="button"
+              class="viewer-btn certif-btn"
+              data-file="./pdf-travaux/Certifications/SQL-_Intermediate_.pdf">
+              SQL – Niveau intermédiaire
+            </button>
+          </details>
+        </div>
+      </aside>
+
+      <!-- PDF viewer -->
+      <div class="viewer-frame">
+        <iframe
+          id="certifViewer"
+          src="./pdf-travaux/Certifications/CSS.pdf"
+          title="Certifications"
+          frameborder="0">
+        </iframe>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <!-- 5) PROJET FINAL -->
     <section class="projet-final" id="projet-final">
