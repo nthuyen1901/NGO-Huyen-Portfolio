@@ -23,7 +23,6 @@ window.addEventListener("keydown", handleFirstTab);
 // Back to top button
 // --------------------------------------------------
 const backToTopButton = document.querySelector(".back-to-top");
-let isBackToTopRendered = false;
 
 const alterStyles = (isVisible) => {
   if (!backToTopButton) return;
@@ -34,10 +33,8 @@ const alterStyles = (isVisible) => {
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 700) {
-    isBackToTopRendered = true;
     alterStyles(true);
   } else {
-    isBackToTopRendered = false;
     alterStyles(false);
   }
 });
@@ -49,18 +46,17 @@ function initPdfViewer(buttonSelector, viewerId) {
   const buttons = document.querySelectorAll(buttonSelector);
   const viewer = document.getElementById(viewerId);
 
-  if (!buttons.length || !viewer) return; // nothing to do
+  if (!buttons.length || !viewer) return;
 
   buttons.forEach((btn) => {
-    btn.addEventListener("click", function () {
-      const file = this.getAttribute("data-file");
+    btn.addEventListener("click", () => {
+      const file = btn.getAttribute("data-file");
       if (file) {
-        viewer.src = file; // change PDF in iframe
+        viewer.src = file;
       }
 
-      // update active button style
       buttons.forEach((b) => b.classList.remove("viewer-btn--active"));
-      this.classList.add("viewer-btn--active");
+      btn.classList.add("viewer-btn--active");
     });
   });
 }
@@ -69,33 +65,18 @@ function initPdfViewer(buttonSelector, viewerId) {
 // Initialize viewers when DOM is ready
 // --------------------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
-  // Travaux demandés buttons (class="viewer-btn travaux-btn")
+  // Travaux demandés
   initPdfViewer(".travaux-btn", "travauxViewer");
-// --------------------------------------------------
-// Simple helpers used by the HTML onclick attributes
-// --------------------------------------------------
-const TRAVAUX_BASE = "./pdf-travaux/";
-const NOTES_BASE = "./pdf-notes/";
 
-function showTravauxPDF(relativePath) {
-  const viewer = document.getElementById("travauxViewer");
-  if (!viewer) return;
-
-  // Example: relativePath = "TD1/(TD1)TD 1 SI.pdf"
-  // Final src = "./pdf-travaux/TD1/(TD1)TD 1 SI.pdf"
-  viewer.src = TRAVAUX_BASE + relativePath;
-}
-
-function showNotesPDF(relativePath) {
-  const viewer = document.getElementById("notesViewer");
-  if (!viewer) return;
-
-  // Example: relativePath = "Chapitre1/chapitre1-introduction.pdf"
-  // Final src = "./pdf-notes/Chapitre1/chapitre1-introduction.pdf"
-  viewer.src = NOTES_BASE + relativePath;
-}
-
-  
-  // Notes de cours buttons (class="viewer-btn notes-btn")
+  // Notes de cours
   initPdfViewer(".notes-btn", "notesViewer");
+
+  // Documents SI
+  initPdfViewer(".docsi-btn", "docsiViewer");
+
+  // Certifications
+  initPdfViewer(".certif-btn", "certifViewer");
+
+  // Projet final
+  initPdfViewer(".projet-btn", "projetViewer");
 });
