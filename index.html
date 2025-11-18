@@ -312,29 +312,49 @@
 
 
 
-    <!-- 3) DOCUMENTS SI -->
-    <section class="docs-si" id="docs-si">
-      <div class="row">
-        <h2>Documents d’un Système d’Information</h2>
+   <!-- 3) DOCUMENTS SI -->
+<section class="docs-si" id="docs-si">
+  <div class="row">
+    <h2>Documents d’un Système d’Information</h2>
 
-        <p><strong>Objectif :</strong> Identifier, rédiger et organiser des documents liés à un système d’information.
-          Les documents doivent être bien rédigés, classés et présentés de manière professionnelle.</p>
+    <p><strong>Objectif :</strong> Identifier, rédiger et organiser des documents liés à un système d’information.
+      Les documents doivent être bien rédigés, classés et présentés de manière professionnelle.</p>
 
-        <p><strong>Documents disponibles :</strong></p>
-        <ul>
-          <li>
-            <a href="./docs-si/diagramme-systeme-information.pdf" target="_blank">
-              Diagramme du Système d’Information
-            </a>
-          </li>
-          <li>
-            <a href="./docs-si/diagramme-flux.pdf" target="_blank">
-              Diagramme des Flux
-            </a>
-          </li>
-        </ul>
+    <p>Sélectionnez un document dans la barre latérale pour l’afficher ci-dessous :</p>
+
+    <div class="viewer-layout">
+      <!-- Sidebar -->
+      <aside class="viewer-sidebar">
+        <h3 class="viewer-sidebar__title">Documents SI</h3>
+
+        <div class="pdf-tree">
+          <details open>
+            <summary>Diagrammes &amp; documents</summary>
+
+            <button type="button"
+              class="viewer-btn docsi-btn"
+              data-file="./pdf-travaux/Documents d’un Système d’Information/(Document SI)DiagramSIportfolio.drawio.pdf">
+              (Document SI)DiagramSIportfolio.drawio
+            </button>
+
+           
+          </details>
+        </div>
+      </aside>
+
+      <!-- Viewer -->
+      <div class="viewer-frame">
+        <iframe
+          id="docsiViewer"
+          src="./pdf-travaux/Documents d’un Système d’Information/(Document SI)DiagramSIportfolio.drawio.pdf"
+          title="Documents d’un Système d’Information"
+          frameborder="0">
+        </iframe>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
  <!-- 4) CERTIFICATIONS -->
 <section class="certifications" id="certifications">
@@ -362,13 +382,13 @@
             <button type="button"
               class="viewer-btn certif-btn"
               data-file="./pdf-travaux/Certifications/SQL_basic_.pdf">
-              SQL – Niveau débutant
+              SQL_basic_
             </button>
 
             <button type="button"
               class="viewer-btn certif-btn"
               data-file="./pdf-travaux/Certifications/SQL-_Intermediate_.pdf">
-              SQL – Niveau intermédiaire
+              SQL-_Intermediate_
             </button>
           </details>
         </div>
