@@ -86,66 +86,128 @@
     </section>
 
       
-      <!-- 1) TRAVAUX DEMANDÉS – viewer -->
-    <section class="travaux" id="travaux">
-      <div class="row">
-        <h2>Travaux demandés</h2>
-        <p>Sélectionnez un document dans la barre latérale pour l’afficher ci-dessous :</p>
+   <section class="travaux" id="travaux">
+  <div class="row">
+    <h2>Travaux demandés</h2>
+    <p>Sélectionnez un document dans la barre latérale pour l’afficher ci-dessous :</p>
 
-        <div class="viewer-layout">
-          <!-- Sidebar -->
-          <aside class="viewer-sidebar">
-            <h3 class="viewer-sidebar__title">Travaux demandés</h3>
+    <div class="viewer-layout">
+      <!-- Sidebar -->
+      <aside class="viewer-sidebar">
+        <h3 class="viewer-sidebar__title">Travaux demandés</h3>
 
-            <!-- FOLDERS FOR TD1–TD4 -->
-            <div class="pdf-tree">
-              <!-- TD1 -->
-              <details open>
-                <summary>TD1</summary>
-               
-                <button type="button" onclick="showTravauxPDF('TD1/TD 1 SI 2.pdf')">
-                  TD 1 SI 2
-                </button>
-              </details>
+        <div class="pdf-tree">
+          <!-- TD1 -->
+          <details open>
+            <summary>TD1</summary>
 
-              <!-- TD2 -->
-              <details>
-                <summary>TD2</summary>
-                <button type="button" onclick="showTravauxPDF('TD2/td2.pdf')">
-                  TD2 – Sujet principal
-                </button>
-              </details>
+            <button type="button"
+              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD1)TD 1 SI.pdf')">
+              (TD1) TD 1 SI
+            </button>
 
-              <!-- TD3 -->
-              <details>
-                <summary>TD3</summary>
-                <button type="button" onclick="showTravauxPDF('TD3/td3.pdf')">
-                  TD3 – Sujet principal
-                </button>
-              </details>
+            <button type="button"
+              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD1)dossier 3.pdf')">
+              (TD1) Dossier 3
+            </button>
 
-              <!-- TD4 -->
-              <details>
-                <summary>TD4</summary>
-                <button type="button" onclick="showTravauxPDF('TD4/td4.pdf')">
-                  TD4 – Sujet principal
-                </button>
-              </details>
-            </div>
-          </aside>
+            <button type="button"
+              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD1)td_PGI_exercice.pdf')">
+              (TD1) TD PGI exercice
+            </button>
 
-          <!-- PDF viewer -->
-          <div class="viewer-frame">
-            <iframe
-              id="travauxViewer"
-              src="./pdf-travaux/TD1/TD 1 SI 2.pdf"
-              title="Travaux demandés"
-              frameborder="0">
-            </iframe>
-          </div>
+            <!-- Fichier Excel : ouverture dans un nouvel onglet -->
+            <a href="./pdf-travaux/TD1/(TD1)PGI_exercice.xls" target="_blank">
+              (TD1) PGI exercice (XLS)
+            </a>
+          </details>
+
+          <!-- TD2 -->
+          <details>
+            <summary>TD2</summary>
+
+            <button type="button"
+              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD2)A2.2_TD2_ProcessusOrganisationnel.pdf')">
+              (TD2) A2.2 TD2 Processus Org
+            </button>
+
+            <button type="button"
+              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD2)TD2 si.pdf')">
+              (TD2) TD2 SI
+            </button>
+
+            <button type="button"
+              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD2)training shéma acteur flux.pdf')">
+              (TD2) Training schéma acteur flux
+            </button>
+          </details>
+
+          <!-- TD3 -->
+          <details>
+            <summary>TD3</summary>
+
+            <button type="button"
+              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD3)Odoo présentation.pdf')">
+              (TD3) Odoo présentation
+            </button>
+
+            <button type="button"
+              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD3)TP Odoo.pdf')">
+              (TD3) TP Odoo
+            </button>
+          </details>
+
+          <!-- TD4 -->
+          <details>
+            <summary>TD4</summary>
+
+            <button type="button"
+              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD4)Les phases SI.pdf')">
+              (TD4) Les phases SI
+            </button>
+
+            <button type="button"
+              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD4)TD MCD.pdf')">
+              (TD4) TD MCD
+            </button>
+
+            <button type="button"
+              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD4)tp gantt.pdf')">
+              (TD4) TP Gantt
+            </button>
+          </details>
+
+          <!-- TD5 -->
+          <details>
+            <summary>TD5</summary>
+
+            <button type="button"
+              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD5)Diagramme de classe.pdf')">
+              (TD5) Diagramme de classe
+            </button>
+
+            <button type="button"
+              onclick="showTravauxPDF('./pdf-travaux/TD1/(TD5)USE CASE.pdf')">
+              (TD5) USE CASE
+            </button>
+          </details>
         </div>
+      </aside>
+
+      <!-- PDF viewer -->
+      <div class="viewer-frame">
+        <!-- PDF affiché par défaut : TD1 -->
+        <iframe
+          id="travauxViewer"
+          src="./pdf-travaux/TD1/(TD1)TD 1 SI.pdf"
+          title="Travaux demandés"
+          frameborder="0">
+        </iframe>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
 
     <!-- 2) NOTES DE COURS – viewer -->
