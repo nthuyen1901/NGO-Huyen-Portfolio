@@ -407,36 +407,57 @@
   </div>
 </section>
 
-    <!-- 5) PROJET FINAL -->
-    <section class="projet-final" id="projet-final">
-      <div class="row">
-        <h2>Projet Final</h2>
+   <!-- 5) PROJET FINAL -->
+<section class="projet-final" id="projet-final">
+  <div class="row">
+    <h2>Projet Final</h2>
 
-        <p><strong>Objectif :</strong> Concevoir et réaliser un projet numérique intégrant les compétences acquises.
-          Le projet doit être réalisé, documenté et présenté de manière professionnelle.</p>
+    <p><strong>Objectif :</strong> Concevoir et réaliser un projet numérique intégrant les compétences acquises.
+      Le projet doit être réalisé, documenté et présenté de manière professionnelle.</p>
 
-        <p><strong>Présentation du projet :</strong><br />
-          Voici le document complet de présentation du projet final :</p>
+    <p><strong>Présentation du projet :</strong><br />
+      Sélectionnez le document du projet final pour l’afficher :</p>
 
-        <div class="viewer-frame">
-          <iframe
-            src="./projet-final/projet-final.pdf"
-            title="Projet final"
-            frameborder="0">
-          </iframe>
+    <div class="viewer-layout">
+      <!-- Sidebar -->
+      <aside class="viewer-sidebar">
+        <h3 class="viewer-sidebar__title">Projet Final</h3>
+
+        <div class="pdf-tree">
+          <details open>
+            <summary>Documents du projet</summary>
+
+            <button type="button"
+              class="viewer-btn projet-btn"
+              data-file="./pdf-travaux/Projet Final/Projet SI.pdf">
+              Projet SI
+            </button>
+          </details>
         </div>
 
-        <!-- link added -->
+        <!-- lien GitHub -->
         <div class="projet-links">
           <a href="https://github.com/nthuyen1901/systeme-de-gestion-de-bibliotheque-2025"
-            target="_blank"
-            class="btn btn--pink">
+             target="_blank"
+             class="btn btn--pink">
             Voir le projet sur GitHub
           </a>
         </div>
+      </aside>
 
+      <!-- PDF viewer -->
+      <div class="viewer-frame">
+        <iframe
+          id="projetViewer"
+          src="./pdf-travaux/Projet Final/Projet SI.pdf"
+          title="Projet final"
+          frameborder="0">
+        </iframe>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     <!-- 6) SOUTENANCE -->
     <section class="soutenance" id="soutenance">
