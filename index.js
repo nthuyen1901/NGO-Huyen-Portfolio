@@ -71,7 +71,31 @@ function initPdfViewer(buttonSelector, viewerId) {
 document.addEventListener("DOMContentLoaded", () => {
   // Travaux demandés buttons (class="viewer-btn travaux-btn")
   initPdfViewer(".travaux-btn", "travauxViewer");
+// --------------------------------------------------
+// Simple helpers used by the HTML onclick attributes
+// --------------------------------------------------
+const TRAVAUX_BASE = "./pdf-travaux/";
+const NOTES_BASE = "./pdf-notes/";
 
+function showTravauxPDF(relativePath) {
+  const viewer = document.getElementById("travauxViewer");
+  if (!viewer) return;
+
+  // Example: relativePath = "TD1/(TD1)TD 1 SI.pdf"
+  // Final src = "./pdf-travaux/TD1/(TD1)TD 1 SI.pdf"
+  viewer.src = TRAVAUX_BASE + relativePath;
+}
+
+function showNotesPDF(relativePath) {
+  const viewer = document.getElementById("notesViewer");
+  if (!viewer) return;
+
+  // Example: relativePath = "Chapitre1/chapitre1-introduction.pdf"
+  // Final src = "./pdf-notes/Chapitre1/chapitre1-introduction.pdf"
+  viewer.src = NOTES_BASE + relativePath;
+}
+
+  
   // Notes de cours buttons (class="viewer-btn notes-btn")
   initPdfViewer(".notes-btn", "notesViewer");
 });
