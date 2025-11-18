@@ -223,81 +223,93 @@
     </section>
 
 
-    <!-- 2) NOTES DE COURS – viewer -->
-    <section class="notes" id="notes">
-      <div class="row">
-        <h2>Notes de cours</h2>
-        <p>Sélectionnez un document dans la barre latérale pour l’afficher ci-dessous :</p>
+  <!-- 2) NOTES DE COURS – viewer -->
+<section class="notes" id="notes">
+  <div class="row">
+    <h2>Notes de cours</h2>
+    <p>Sélectionnez un document dans la barre latérale pour l’afficher ci-dessous :</p>
 
-        <div class="viewer-layout">
-          <aside class="viewer-sidebar">
-            <h3 class="viewer-sidebar__title">Notes de cours</h3>
+    <div class="viewer-layout">
+      <aside class="viewer-sidebar">
+        <h3 class="viewer-sidebar__title">Notes de cours</h3>
 
-            <!-- FOLDERS FOR CHAPTERS -->
-            <div class="pdf-tree">
-              <!-- Chapitre 1 -->
-              <details open>
-                <summary>Chapitre 1 : Introduction</summary>
-                <button type="button"
-                  class="viewer-btn notes-btn"
-                  data-file="./pdf-notes/Chapitre1/chapitre1-introduction.pdf">
-                  Cours complet
-                </button>
-              </details>
+        <div class="pdf-tree">
+          <!-- Cours 1 -->
+          <details open>
+            <summary>Cours 1</summary>
+            <button type="button"
+              class="viewer-btn notes-btn"
+              data-file="./pdf-travaux/Notes de cours/(cours 1)Document synthétique des phases.pdf">
+              (cours 1) Document synthétique des phases
+            </button>
+          </details>
 
-              <!-- Chapitre 2 -->
-              <details>
-                <summary>Chapitre 2 : Gestion de projet</summary>
-                <button type="button"
-                  class="viewer-btn notes-btn"
-                  data-file="./pdf-notes/Chapitre2/chapitre2-gestion-de-projet.pdf">
-                  Cours complet
-                </button>
-              </details>
+          <!-- Cours 2 -->
+          <details>
+            <summary>Cours 2</summary>
 
-              <!-- Chapitre 3 -->
-              <details>
-                <summary>Chapitre 3 : Cherche un nom</summary>
-                <button type="button"
-                  class="viewer-btn notes-btn"
-                  data-file="./pdf-notes/Chapitre3/chapitre3.pdf">
-                  Cours complet
-                </button>
-              </details>
+            <button type="button"
+              class="viewer-btn notes-btn"
+              data-file="./pdf-travaux/Notes de cours/(cours 2) information.pdf">
+              (cours 2) Information
+            </button>
 
-              <!-- Chapitre 4 -->
-              <details>
-                <summary>Chapitre 4 : Cherche un nom</summary>
-                <button type="button"
-                  class="viewer-btn notes-btn"
-                  data-file="./pdf-notes/Chapitre4/chapitre4.pdf">
-                  Cours complet
-                </button>
-              </details>
+            <button type="button"
+              class="viewer-btn notes-btn"
+              data-file="./pdf-travaux/Notes de cours/(cours 2)dossier gestion projet.pdf">
+              (cours 2) Dossier gestion projet
+            </button>
 
-              <!-- Projet -->
-              <details>
-                <summary>Projet</summary>
-                <button type="button"
-                  class="viewer-btn notes-btn"
-                  data-file="./pdf-notes/Projet/projet.pdf">
-                  Document de projet
-                </button>
-              </details>
-            </div>
-          </aside>
+            <button type="button"
+              class="viewer-btn notes-btn"
+              data-file="./pdf-travaux/Notes de cours/(cours 2)Énoncé du Projet.pdf">
+              (cours 2) Énoncé du projet
+            </button>
+          </details>
 
-          <div class="viewer-frame">
-            <iframe
-              id="notesViewer"
-              src="./pdf-notes/Chapitre1/chapitre1-introduction.pdf"
-              title="Notes de cours"
-              frameborder="0">
-            </iframe>
-          </div>
+          <!-- Cours 3 -->
+          <details>
+            <summary>Cours 3</summary>
+
+            <button type="button"
+              class="viewer-btn notes-btn"
+              data-file="./pdf-travaux/Notes de cours/(cours 3) use case.pdf">
+              (cours 3) Use case
+            </button>
+          </details>
+
+          <!-- Cours 4 -->
+          <details>
+            <summary>Cours 4</summary>
+
+            <button type="button"
+              class="viewer-btn notes-btn"
+              data-file="./pdf-travaux/Notes de cours/(Cours 4)cours gestion de projet version étudiant.pdf">
+              (Cours 4) Cours gestion de projet (version étudiant)
+            </button>
+
+            <button type="button"
+              class="viewer-btn notes-btn"
+              data-file="./pdf-travaux/Notes de cours/(Cours 4)SFG_TalentSeek.docx.pdf">
+              (Cours 4) SFG TalentSeek
+            </button>
+          </details>
         </div>
+      </aside>
+
+      <div class="viewer-frame">
+        <!-- PDF affiché par défaut : Cours 1 -->
+        <iframe
+          id="notesViewer"
+          src="./pdf-travaux/Notes de cours/(cours 1)Document synthétique des phases.pdf"
+          title="Notes de cours"
+          frameborder="0">
+        </iframe>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
 
     <!-- 3) DOCUMENTS SI -->
