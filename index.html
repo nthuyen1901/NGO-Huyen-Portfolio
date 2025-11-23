@@ -456,25 +456,49 @@
 
 
     <!-- 6) SOUTENANCE -->
-    <section class="soutenance" id="soutenance">
-      <div class="row">
-        <h2>Soutenance</h2>
+<!-- 6) SOUTENANCE -->
+<section class="soutenance" id="soutenance">
+  <div class="row">
+    <h2>Soutenance</h2>
 
-        <p><strong>Diaporama pour la Soutenance</strong></p>
-        <p><strong>Objectif :</strong> Synthétiser et présenter un projet de manière claire et professionnelle.
-          Le diaporama doit être structuré, visuellement lisible et adapté à une présentation orale.</p>
+    <p><strong>Diaporama pour la Soutenance</strong></p>
+    <p><strong>Objectif :</strong> Synthétiser et présenter un projet de manière claire et professionnelle.
+      Le diaporama doit être structuré, visuellement lisible et adapté à une présentation orale.</p>
 
-        <p><strong>Visualiser le diaporama :</strong></p>
+    <p>Sélectionnez un document de soutenance pour l’afficher :</p>
 
-        <div class="viewer-frame">
-          <iframe
-            src="./soutenance/diaporama-soutenance.pdf"
-            title="Diaporama de soutenance"
-            frameborder="0">
-          </iframe>
+    <div class="viewer-layout">
+      <!-- Sidebar -->
+      <aside class="viewer-sidebar">
+        <h3 class="viewer-sidebar__title">Documents de Soutenance</h3>
+
+        <div class="pdf-tree">
+          <details open>
+            <summary>Diaporamas</summary>
+
+            <button type="button"
+              class="viewer-btn soutenance-btn"
+              data-file="./pdf-travaux/Soutenance/Soutenance SI.pdf">
+              Soutenance SI
+            </button>
+
+          </details>
         </div>
+      </aside>
+
+      <!-- PDF viewer -->
+      <div class="viewer-frame">
+        <iframe
+          id="soutenanceViewer"
+          src="./pdf-travaux/Soutenance/Soutenance SI.pdf"
+          title="Diaporama de soutenance"
+          frameborder="0">
+        </iframe>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     <!-- 7) RESSOURCES -->
     <section class="ressources" id="ressources">
