@@ -79,4 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Projet final
   initPdfViewer(".projet-btn", "projetViewer");
+
+  // Soutenance  ← NEW
+  initPdfViewer(".soutenance-btn", "soutenanceViewer");
 });
